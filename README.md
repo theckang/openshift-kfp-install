@@ -1,6 +1,6 @@
 # Installing Kubeflow Pipelines on OpenShift
 
-Simplified instructions to install Kubeflow Pipelines (KFP) on OpenShift.  KFP can run on Tekton or Argo.  We'll install and smoke test both.
+Simplified instructions to install Kubeflow Pipelines (KFP) on OpenShift, running on OpenShift Pipelines (Tekton).
 
 ## Prerequisites
 
@@ -93,9 +93,3 @@ If you navigate to your `Default` Experiment, you should see both pipeline runs 
 
 ![Experiment](images/experiment.png)
 
-
-## KFP on Argo
-
-> TODO
-
-https://github.com/kubeflow/manifests/blob/master/distributions/kfdef/kfctl_openshift.v1.2.0.yaml
