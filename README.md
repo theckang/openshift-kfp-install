@@ -12,22 +12,12 @@ Simplified instructions to install Kubeflow Pipelines (KFP) on OpenShift, runnin
 
 Login to the cluster using `oc login` and admin credentials.
 
-Create a new project for Open Data Hub (ODH)
-
-```bash
-oc new-project odh
-```
-
-Next, install Open Data Hub.
+Install Open Data Hub
 
 * Login to the cluster using the console and admin credentials.
 * Navigate to OperatorHub and search for `Open Data Hub Operator`
 * Install using the `beta` channel.  The version installed in this guide is `1.0`.
 * Under the install operators, you should see the status of the operator change to `Succeeded`
-
-## KFP on Tekton
-
-### Install
 
 Install OpenShift Pipelines (Tekton)
 
@@ -35,6 +25,10 @@ Install OpenShift Pipelines (Tekton)
 * Navigate to OperatorHub and search for `OpenShift Pipelines`
 * Pick the channel corresponding to your version of OpenShift
 * Install and verify the status of the operator changes to `Succeeded`
+
+## KFP on Tekton
+
+### Install
 
 Follow these [instructions](https://github.com/kubeflow/kfp-tekton/blob/master/guides/kfp-tekton-openshift.md#prepare-openshift-cluster-environment) to prepare your environment and download the `tkn` and `kfctl` binaries.
 
